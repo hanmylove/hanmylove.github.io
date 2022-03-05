@@ -1,0 +1,72 @@
+.crush {
+
+}
+.crush-content {
+    position: relative;
+    z-index: 3;
+  }
+  #content-no{
+    position: absolute;
+    display: inline-block;
+    left: 25%; 
+    top: 10vh;
+    -webkit-transition: all 0.1s ease-out;
+  }
+  #content-yes{
+    position: absolute;
+    display: inline-block;
+    left: 65%; 
+    top: 10vh;
+    -webkit-transition: all 0.3s ease-out;
+  }
+
+.swal2-title, .swal2-content{
+  color: azure !important;
+}
+.swal2-popup {
+  border-radius: 15px !important;
+}
+
+#content-text3 {
+  font-family: 'Pacifico';
+  font-size: 80px;
+  text-align: center;
+	margin-bottom: 30px;
+  color: rgba(241,78,149,0.8);
+}
+#content-text4 {
+  font-family: 'Pacifico';
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  #content-text3 {
+    font-family: 'Pacifico';
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #content-text4 {
+    font-family: 'Pacifico';
+    text-align: center;
+    padding: 15px;
+  }
+  #content-no{
+    position: absolute;
+    display: inline-block;
+    left: 7%; 
+    top: 40vh;
+    font-size: 14px;
+    padding: 3px;
+    -webkit-transition: all 0.1s ease-out;
+  }
+  #content-yes{
+    position: absolute;
+    display: inline-block;
+    left: 58%; 
+    top: 40vh;
+    font-size: 14px;
+    padding: 3px;
+    -webkit-transition: all 0.3s ease-out;
+  }
+}
