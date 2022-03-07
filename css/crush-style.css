@@ -8,16 +8,17 @@
   #content-no{
     position: absolute;
     display: inline-block;
-    left: 25%; 
-    top: 10vh;
+    left: 18%; 
+    top: 22vh;
     -webkit-transition: all 0.1s ease-out;
   }
   #content-yes{
     position: absolute;
     display: inline-block;
-    left: 65%; 
-    top: 10vh;
+    left: 58%; 
+    top: 20vh;
     -webkit-transition: all 0.3s ease-out;
+    background-color: rgba(241,78,149,0.8);
   }
 
 .swal2-title, .swal2-content{
@@ -27,6 +28,13 @@
   border-radius: 15px !important;
 }
 
+#content-text13 {
+  font-family: 'Pacifico';
+  font-size: 50px;
+  text-align: center;
+	margin-bottom: 30px;
+  color: rgba(241,78,149,0.8);
+}
 #content-text3 {
   font-family: 'Pacifico';
   font-size: 80px;
@@ -37,6 +45,276 @@
 #content-text4 {
   font-family: 'Pacifico';
   text-align: center;
+}
+
+.rsvp {
+  overflow: visible;
+  background-image:url(../img/red/main_back.jpg);
+}
+#open-letter {
+  position: relative;
+  left: 46%;
+  background-color: rgba(241,78,149,0.8);
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}
+  .button-83 {
+    appearance: button;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #fff, #f8eedb);
+    border: 0 solid #e5e7eb;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #482307;
+    column-gap: 1rem;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    outline: 2px solid transparent;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+  }
+  
+  .button-83:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+    transform: translateY(0.125rem);
+  }
+  
+  .button-83:focus {
+    box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+  }
+
+
+#envelope {
+  margin: 30px 0 0;
+  position: relative;
+}
+
+.envelope p {
+  font: 16px/28px Roboto Condensed
+}
+
+.envelope h2 {
+  margin: 0 0 10px 0
+}
+
+.paper {
+  width: 534px;
+  height: 336px;
+  padding: 20px;
+  position: relative;
+  left: 50%;
+  margin: 0 0 0 -267px;
+  z-index: 2;
+  border-radius: 5px;
+  transition: 0.3s all ease-out;
+  transition-delay: 0.5s;
+  top: 0;
+  font: 14px/24px Roboto Condensed
+}
+
+.paper .paper_title {
+  margin: 10px 0 30px 0;
+  font-size: 26px;
+  text-align: center;
+}
+
+.paper .paper-desc {
+  text-align: center;
+}
+
+.paper .btn {
+  margin: 10px 4px 20px !important;
+}
+
+.envelope_back {
+  width: 559px;
+  height: 349px;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -279px;
+  z-index: 1;
+  transition: 0.3s all ease-out;
+  transition-delay: 0.5s;
+  top: 650px;
+  opacity: 0
+}
+
+.env_top {
+  width: 563px;
+  height: 195px;
+  position: absolute;
+  margin: -194px 0 0 0;
+  transition: 0.2s all ease-in;
+  transition-delay: 0.1s;
+  transform-origin: center bottom;
+}
+
+.env_top_top {
+  width: 563px;
+  height: 199px;
+  position: absolute;
+  margin: 0 0 0 0;
+  transition: 0.2s all ease-out;
+  transition-delay: 0s;
+  transform-origin: center top;
+  z-index: 5;
+  transform: rotateX(90deg);
+  opacity: 0
+}
+
+.envelope_front {
+  width: 565px;
+  height: 351px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  margin: 0 0 0 -281px;
+  transition: 0.3s all ease-out;
+  transition-delay: 0.5s;
+  top: 650px;
+  opacity: 0
+}
+
+.envelopeActive .paper {
+  margin: 0 0 0 -267px;
+  transition-delay: 0;
+  transition: 0.3s all ease-out;
+
+}
+
+.envelopeActive .envelope_back {
+  top: 0;
+  transition-delay: 0;
+  transition: 0.3s all ease-out;
+  opacity: 1
+}
+
+.envelopeActive .envelope_front {
+  top: 0;
+  transition-delay: 0;
+  transition: 0.3s all ease-out;
+  opacity: 1
+}
+
+.envelopeActive .env_top {
+  transform: rotateX(90deg);
+  transition-delay: 0.3s;
+  opacity: 1
+}
+
+.envelopeActive .env_top_top {
+  transform: rotateX(0);
+  transition-delay: 0.5s;
+  opacity: 1
+}
+
+.paper {
+	background:url(../img/red/paper.jpg);
+}
+.envelope_back {
+	background:url(../img/red/env_back.jpg);
+}
+.env_top {
+	background: url(../img/red/env_top.png);
+}
+.env_top_top {
+	background: url(../img/red/env_top_top.png);
+}
+.envelope_front {
+	background:url(../img/red/envelope_front.png);
+}
+.paper .paper_title {
+	color: #e93b38;
 }
 
 @media only screen and (max-width: 500px) {
@@ -54,8 +332,8 @@
   #content-no{
     position: absolute;
     display: inline-block;
-    left: 7%; 
-    top: 40vh;
+    left: 12%; 
+    top: 23vh;
     font-size: 14px;
     padding: 3px;
     -webkit-transition: all 0.1s ease-out;
@@ -63,8 +341,8 @@
   #content-yes{
     position: absolute;
     display: inline-block;
-    left: 58%; 
-    top: 40vh;
+    left: 56%; 
+    top: 20vh;
     font-size: 14px;
     padding: 3px;
     -webkit-transition: all 0.3s ease-out;

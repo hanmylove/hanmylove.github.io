@@ -12,6 +12,7 @@ const textConfig = {
   text11:
     "Mình cưới luôn trong năm nay nhé? ❤️",
   text12: "Okay luôn!",
+  text13: "Dear My Love",
 };
 
 $(document).ready(function () {
@@ -25,13 +26,14 @@ $(document).ready(function () {
     });
   }, 600);
 
+  $("#content-text13").html(textConfig.text13);
   $("#content-text3").html(textConfig.text3);
   $("#content-text4").html(textConfig.text4);
   $("#content-no").html(textConfig.text5);
   $("#content-yes").html(textConfig.text6);
 
   function firstQuestion() {
-    $(".crush-content").hide();
+    $(".rsvp").hide();
     Swal.fire({
       title: textConfig.text1,
       text: textConfig.text2,
@@ -41,7 +43,7 @@ $(document).ready(function () {
       background: '#fff url("img/iput-bg.jpg")',
       imageAlt: "Custom image",
     }).then(function () {
-      $(".crush-content").show(200);
+      $(".rsvp").show(200);
     });
   }
 
@@ -132,7 +134,7 @@ $(document).ready(function () {
           text: textConfig.text11,
           confirmButtonColor: "#83d0c9",
           onClose: () => {
-            var div = document.getElementById('crush');
+            var div = document.getElementById('rsvp');
             div.parentNode.removeChild(div);
             try {
               const myAudio = document.getElementById('myAudio');
@@ -154,4 +156,17 @@ $(document).ready(function () {
       });
     });
   });
+  var openLetter = document.getElementById("open-letter");
+    openLetter.addEventListener("click", function() {
+        console.log("click");
+  var current = document.getElementsByClassName("envelopeActive");
+  if (current.length > 0) { 
+    console.log("> 0, ", current);
+    current[0].className = current[0].className.replace("envelopeActive", "");
+  }
+  console.log("out");
+  var btnOpen = document.getElementById('open-letter');
+  btnOpen.parentNode.removeChild(btnOpen);
+  });
 });
+
